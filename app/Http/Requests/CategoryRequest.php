@@ -27,14 +27,14 @@ class CategoryRequest extends FormRequest
         ];
     }
 
-    public function messages(): array
-    {
+    public function messages(): array{
         return [
-            'name.required' => 'El nombre de la categoría es obligatorio.',
-            'name.unique' => 'Ya existe una categoría con ese nombre.',
-            'name.max' => 'El nombre de la categoría no puede tener más de 255 caracteres.',
-            'name.min' => 'El nombre de la categoría tiene que tener como minimo 1 caracter.',
-            'description.max' => 'La descripción no puede tener más de 500 caracteres.',
+            'name.required' => 'The category name is required.',
+            'name.unique' => 'A category with this name already exists.',
+            'name.max' => 'The category name must not exceed 255 characters.',
+            'name.min' => 'The category name must be at least 1 character.',
+            'description.max' => 'The description must not exceed 500 characters.',
         ];
     }
+    
 }

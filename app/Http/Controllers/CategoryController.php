@@ -114,7 +114,7 @@ class CategoryController extends Controller
             $validatedData = $request->validated();
             $category = $this->categoryService->updateCategory($id, $validatedData);
             
-            return new CategoryResource($category); // Laravel automáticamente usa HTTP 200
+            return new CategoryResource($category); 
     
         } catch (ModelNotFoundException $e) {
             return response()->json([

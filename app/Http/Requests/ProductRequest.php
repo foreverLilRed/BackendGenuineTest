@@ -29,17 +29,16 @@ class ProductRequest extends FormRequest
         ];
     }
 
-    public function messages(): array
-    {
+    public function messages(): array{
         return [
-            'name.required' => 'El nombre del producto es obligatorio.',
-            'name.max' => 'El nombre no puede exceder los 255 caracteres.',
-            'quantity.required' => 'La cantidad es obligatoria.',
-            'quantity.integer' => 'La cantidad debe ser un número entero.',
-            'quantity.min' => 'La cantidad no puede ser negativa.',
-            'category_id.required' => 'La categoría es obligatoria.',
-            'category_id.exists' => 'La categoría seleccionada no existe.',
-            'description.max' => 'La descripción no puede tener más de 1000 caracteres.',
+            'name.required' => 'The product name is required.',
+            'name.max' => 'The name must not exceed 255 characters.',
+            'quantity.required' => 'The quantity is required.',
+            'quantity.integer' => 'The quantity must be an integer.',
+            'quantity.min' => 'The quantity cannot be negative.',
+            'category_id.required' => 'The category is required.',
+            'category_id.exists' => 'The selected category does not exist.',
+            'description.max' => 'The description must not exceed 1000 characters.',
         ];
     }
 }

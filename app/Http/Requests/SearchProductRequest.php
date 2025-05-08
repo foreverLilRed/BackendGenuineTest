@@ -33,27 +33,28 @@ class SearchProductRequest extends FormRequest
 
     public function messages(){
         return [
-            'name.string' => 'El nombre debe ser una cadena de texto.',
-            'name.max' => 'El nombre no debe exceder los 255 caracteres.',
-
-            'description.string' => 'La descripción debe ser una cadena de texto.',
-            'description.max' => 'La descripción no debe exceder los 1000 caracteres.',
-
-            'min_quantity.numeric' => 'La cantidad mínima debe ser un número.',
-            'min_quantity.min' => 'La cantidad mínima no puede ser negativa.',
-
-            'max_quantity.numeric' => 'La cantidad máxima debe ser un número.',
-            'max_quantity.min' => 'La cantidad máxima no puede ser negativa.',
-
-            'category_name.string' => 'El nombre de la categoría debe ser una cadena de texto.',
-            'category_name.max' => 'El nombre de la categoría no debe exceder los 255 caracteres.',
-
-            'category_id.integer' => 'El ID de la categoría debe ser un número entero.',
-            'category_id.exists' => 'La categoría seleccionada no existe.',
-
-            'per_page.integer' => 'El valor de elementos por página debe ser un número entero.',
-            'per_page.min' => 'Debe mostrar al menos un elemento por página.',
-            'per_page.max' => 'No se pueden mostrar más de 100 elementos por página.',
+            'name.string' => 'The name must be a string.',
+            'name.max' => 'The name must not exceed 255 characters.',
+    
+            'description.string' => 'The description must be a string.',
+            'description.max' => 'The description must not exceed 1000 characters.',
+    
+            'min_quantity.numeric' => 'The minimum quantity must be a number.',
+            'min_quantity.min' => 'The minimum quantity cannot be negative.',
+    
+            'max_quantity.numeric' => 'The maximum quantity must be a number.',
+            'max_quantity.min' => 'The maximum quantity cannot be negative.',
+    
+            'category_name.string' => 'The category name must be a string.',
+            'category_name.max' => 'The category name must not exceed 255 characters.',
+    
+            'category_id.integer' => 'The category ID must be an integer.',
+            'category_id.exists' => 'The selected category does not exist.',
+    
+            'per_page.integer' => 'The items per page value must be an integer.',
+            'per_page.min' => 'You must display at least one item per page.',
+            'per_page.max' => 'You cannot display more than 100 items per page.',
         ];
     }
+    
 }
