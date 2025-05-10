@@ -6,6 +6,7 @@
 /storage/*.key
 /storage/pail
 /vendor
+ngrok.exe
 .env
 .env.backup
 .env.production
