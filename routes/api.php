@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DialogFlowController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +28,5 @@ Route::prefix('product')->group(function(){
     Route::patch('/{id}', [ProductController::class, 'update']); 
     Route::delete('/{id}', [ProductController::class, 'destroy']);
 });
+
+Route::post('/dialogflow-webhook', DialogFlowController::class);
